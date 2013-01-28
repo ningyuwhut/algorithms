@@ -18,4 +18,10 @@ public class Sort
 			System.out.print( array[i] + " " );
 		
 	}
+
+	public static void check( Comparable[] array )
+	{
+		for( int i = 0; i < array.length; ++i )
+			assert( compare(array[i], array[i+1]) < 0 );
+	}
 }
